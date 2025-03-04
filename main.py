@@ -1,7 +1,12 @@
+from rich.console import Console
+from rich.panel import Panel
+from rich.text import Text
 import os
-import time
 
-os.system("Installers.py")
+console = Console()
+title = Text("Installers.py", style="bold #90ee90", justify="center")
 
-time.sleep(1)
-print ("comming soon")
+os.system("clear")
+console.print(Panel(title, border_style="#add8e6"))
+
+input()
